@@ -14,4 +14,11 @@ export const useCarritoStore = create((set) => ({
   //   items: [],
   //   agregarItem: (item) => set((state) => ({ ... })),
   // ---------------------------------------------------------------
+//AGREGADO:
+  items: [],
+  agregarItem: (item) =>
+    set((state) => ({
+      items: [...state.items, item],
+    })),
+//AGREGADO--
 }));

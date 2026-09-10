@@ -10,7 +10,10 @@ function Navbar() {
   //
   // Pista: const items = useCarritoStore((state) => state.items);
   // ---------------------------------------------------------------
-  const items = [];
+  // CAMBIADO: const items = [];
+//AGREGADO:
+  const items = useCarritoStore((state) => state.items);
+//AGREGADO--
 
   return (
     <header className="app-header">
